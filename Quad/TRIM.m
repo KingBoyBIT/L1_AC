@@ -40,4 +40,5 @@ x0(1) = u_trim ;x(16) = .3;
 x0(12) = 0;
 % x0(1:12) = randn(1,12);
 x0(13:16)=1;
-[stato]  =	fmincon('funzione_di_costo',x0,[],[],Aeq,beq,[],[],[],options);
+
+[stato]=fmincon('funzione_di_costo',x0,[],[],Aeq,beq,[],[],[],options);
